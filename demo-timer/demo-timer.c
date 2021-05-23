@@ -90,8 +90,7 @@ PROCESS_THREAD(demo_timer3, ev, data)
 PROCESS_BEGIN();
 printf("demo ctime\n");
 while(1) {
-ctimer_set(&ctimer_timer, CLOCK_SECOND, perform_ctime_
-callback, NULL);
+ctimer_set(&ctimer_timer, CLOCK_SECOND, perform_ctime_callback, NULL);
 PROCESS_YIELD();
 }
 PROCESS_END();
